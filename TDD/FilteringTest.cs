@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Halfblood.UnitTests.DepartmentOrderTests;
 using NUnit.Framework;
 using ReactiveUI;
 using Rhino.Mocks;

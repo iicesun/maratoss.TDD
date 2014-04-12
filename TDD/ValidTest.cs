@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation.Results;
-using Halfblood.UnitTests.DepartmentOrderTests;
+﻿using FluentValidation.Results;
 using NUnit.Framework;
 using Rhino.Mocks;
 
 namespace TDD
 {
-    public class Valid
+    public class ValidTest
     {
         public void test()
         {
