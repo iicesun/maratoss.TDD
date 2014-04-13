@@ -87,13 +87,14 @@
   <ItemGroup>
     <Compile Include="ChangeService.cs" />
     <Compile Include="EditTest.cs" />
-    <Compile Include="Filtering.cs" />
+    <Compile Include="EditWithCatalog.cs" />
+    <Compile Include="FilteringTest.cs" />
     <Compile Include="GettingEntityTest.cs" />
     <Compile Include="Metadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadTest.cs" />
     <Compile Include="UX.cs" />
-    <Compile Include="Valid.cs" />
+    <Compile Include="ValidTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

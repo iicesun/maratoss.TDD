@@ -25,7 +25,7 @@ namespace TDD
         public long Rn { get; set; }
         public Between<DateTime?> StateDate { get; set; }
     }
-    public class DepartmentOrder
+    public class DepartmentOrder : IUiEntity
     {
         public DepartmentOrder()
         {
