@@ -24,7 +24,19 @@ namespace TDD
         class SomeClass : IReadModel<DepartmentOrder>
         {
             public event PropertyChangedEventHandler PropertyChanged;
-            public DepartmentOrder Entity { get; private set; }
+            public DepartmentOrder Entity { get; set; }
+
+            object IReadModel.Entity
+            {
+                get
+                {
+                    return Entity;
+                }
+                set
+                {
+                    Entity = (DepartmentOrder)value;
+                }
+            }
         }
     }
 

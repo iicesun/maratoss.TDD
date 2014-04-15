@@ -49,6 +49,7 @@ namespace TDD
     }
     public interface IReadModelFactory
     {
+        //TODO: нужно чтоб у возвращающемого типа был IsExecuting Abort ThrowException
         IObservable<TConcreteReadModel> Create<TConcreteReadModel>(long id, string contract = null)
             where TConcreteReadModel : IReadModel;
     }

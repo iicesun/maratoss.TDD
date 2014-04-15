@@ -89,6 +89,7 @@
     <Compile Include="EditTest.cs" />
     <Compile Include="EditWithCatalog.cs" />
     <Compile Include="FilteringTest.cs" />
+    <Compile Include="GetGenericViaReflection.cs" />
     <Compile Include="GettingEntityTest.cs" />
     <Compile Include="Metadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

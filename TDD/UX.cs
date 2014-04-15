@@ -1,4 +1,6 @@
-﻿namespace TDD
+﻿using System.Reactive.Linq;
+
+namespace TDD
 {
     using System;
     using System.Linq;
@@ -35,7 +37,7 @@
             // взять последнюю созданную ззавку и открыть на просмотр, для более детализированного просмотра (если необходимо)
             var readModelFactory = MockRepository.GenerateMock<IReadModelFactory>();
             IReadModel<DepartmentOrder> readModel =
-                await readModelFactory.Create<DepartmentOrder>(filteringModel.Result.Last().Rn);
+                readModelFactory.Create<IReadModel<DepartmentOrder>>(filteringModel.Result.Last().Rn).Wait();
 
             Assert.That(readModel.Entity != null);
             Assert.That(readModel.Entity.Rn == filteringModel.Result.Last().Rn);

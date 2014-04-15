@@ -51,7 +51,7 @@ namespace TDD
          Task<IEditModel<T>> Create<T>(long id);
          IEditModel<T> Create<T>(T entityForEdit);
      }
-     public interface IEditModel<out TEntity> : IReadModel<TEntity>
+     public interface IEditModel<TEntity> : IReadModel<TEntity>
      {
          bool IsChanged { get; }
          IObservable<bool> IsExecuting { get; }
